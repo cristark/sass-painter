@@ -11,3 +11,10 @@
 @mixin smoothT($sec) {
   transition: all #{$sec} linear;
 }
+
+@mixin basicBtn {
+  font-size: 1.4em;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,1 +1,62 @@
 /* Jumbotron */
+.jumbotron {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/bg-painter-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -20px;
+
+  .container {
+    @include flex(center, flex-start);
+    flex-direction: column;
+    padding-right: 600px;
+    opacity: 0;
+    animation: fadeInText 1.5s ease-in 0.5s forwards;
+
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 250px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      margin-bottom: 50px;
+    }
+
+    p {
+      color: #c70cb9;
+      font-size: 1.2em;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    .buttons {
+      @include flex(center);
+      margin-top: 40px;
+
+      .btn {
+        @include basicBtn;
+        border: 2px solid $mainBlack;
+
+        &.blk {
+          background: $mainBlack;
+          color: $mainWhite;
+          margin-right: 20px;
+
+          &:hover {
+            opacity: 0.85;
+          }
+        }
+      }
+    }
+  }
+}
