@@ -1,7 +1,9 @@
+/* HEADER */
 header {
   height: 100px;
-  background: #101010;
+  background: $mainBlack;
 
+  // + TOP HEADER
   .top_header {
     @include flex(flex-end);
     height: 50%;
@@ -17,13 +19,58 @@ header {
           @include smoothT(0.1s);
 
           &:hover {
-            color: #fff;
+            color: $mainWhite;
             text-decoration: underline;
           }
 
           i {
             margin-right: 10px;
           }
+        }
+      }
+    }
+  }
+
+  // + MAIN HEADER
+  .main_header {
+    @include flex(flex-start);
+    height: 50%;
+
+    img {
+      margin-right: 40px;
+      transform: scale(80%);
+      align-self: flex-start;
+      cursor: pointer;
+    }
+
+    .main_nav {
+      height: 100%;
+      line-height: 50px;
+
+      ul li {
+        position: relative;
+        padding: 0 20px;
+
+        &:hover {
+          background: $mainWhite;
+
+          a {
+            color: $mainBlack;
+          }
+
+          i {
+            color: gray;
+          }
+        }
+
+        a i {
+          color: rgba(211, 211, 211, 0.5);
+          font-size: 0.8em;
+          margin-left: 5px;
+        }
+
+        .dropdown {
+          position: absolute;
         }
       }
     }

@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #f1f1f1;
   text-decoration: none;
 }
 
@@ -32,6 +32,7 @@ i {
   margin: 0 auto;
 }
 
+/* HEADER */
 header {
   height: 100px;
   background: #101010;
@@ -53,9 +54,48 @@ header .top_header .top_nav ul li a {
   transition: all 0.1s linear;
 }
 header .top_header .top_nav ul li a:hover {
-  color: #fff;
+  color: #f1f1f1;
   text-decoration: underline;
 }
 header .top_header .top_nav ul li a i {
   margin-right: 10px;
 }
+header .main_header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50%;
+}
+header .main_header img {
+  margin-right: 40px;
+  transform: scale(80%);
+  align-self: flex-start;
+  cursor: pointer;
+}
+header .main_header .main_nav {
+  height: 100%;
+  line-height: 50px;
+}
+header .main_header .main_nav ul li {
+  position: relative;
+  padding: 0 20px;
+}
+header .main_header .main_nav ul li:hover {
+  background: #f1f1f1;
+}
+header .main_header .main_nav ul li:hover a {
+  color: #101010;
+}
+header .main_header .main_nav ul li:hover i {
+  color: gray;
+}
+header .main_header .main_nav ul li a i {
+  color: rgba(211, 211, 211, 0.5);
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+header .main_header .main_nav ul li .dropdown {
+  position: absolute;
+}
+
+/* Jumbotron */

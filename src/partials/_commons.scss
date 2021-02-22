@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: $mainWhite;
   text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ li {
 }
 
 i {
-  color: #009cff;
+  color: $iconsColor;
 }
 
 .container {
