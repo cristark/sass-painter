@@ -1,0 +1,31 @@
+header {
+  height: 100px;
+  background: #101010;
+
+  .top_header {
+    @include flex(flex-end);
+    height: 50%;
+
+    .top_nav {
+      margin-right: 15px;
+
+      ul li {
+        margin-right: 15px;
+
+        a {
+          color: rgba(211, 211, 211, 0.5);
+          @include smoothT(0.1s);
+
+          &:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
+
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

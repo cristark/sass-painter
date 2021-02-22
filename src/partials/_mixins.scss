@@ -1,5 +1,13 @@
+@mixin boxTest {
+  border: 1px solid black;
+}
+
 @mixin flex($justify, $align: center) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin smoothT($sec) {
+  transition: all #{$sec} linear;
 }
