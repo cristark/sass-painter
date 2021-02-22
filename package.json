@@ -1,0 +1,17 @@
+{
+  "name": "sass-painter",
+  "version": "1.0.0",
+  "description": "sass-painter",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.11",
+    "sass": "^1.32.8",
+    "sass-loader": "^8.0.2"
+  }
+}
