@@ -105,6 +105,45 @@ header {
         .product:hover {
           .products {
             display: block;
+
+            li {
+              position: relative;
+            }
+
+            .dropdown2 {
+              display: none;
+              background: #e6e6e6;
+              position: absolute;
+              top: 0;
+              left: 220px;
+
+              li {
+                width: 330px;
+
+                &:hover {
+                  background: #d6d6d6;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            .edudrop:hover {
+              .edudrops {
+                display: block;
+              }
+            }
+
+            .mobile:hover {
+              .mobiles {
+                display: block;
+              }
+            }
+
+            .wacom:hover {
+              .wacoms {
+                display: block;
+              }
+            }
           }
         }
 

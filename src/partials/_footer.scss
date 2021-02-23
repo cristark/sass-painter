@@ -4,7 +4,7 @@ footer {
     padding: 50px 0 30px;
 
     .footer_nav {
-      @include flex(space-between);
+      @include flex(space-between, flex-start);
 
       .nav_box {
         p {
@@ -40,6 +40,7 @@ footer {
         font-size: 1.5em;
         color: $mainWhite;
         margin-right: 5px;
+        cursor: pointer;
 
         &.ig {
           background: #e4405f;

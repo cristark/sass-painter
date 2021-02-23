@@ -150,6 +150,32 @@ header .main_header .main_nav ul li .dropdown li i {
 header .main_header .main_nav ul .product:hover .products {
   display: block;
 }
+header .main_header .main_nav ul .product:hover .products li {
+  position: relative;
+}
+header .main_header .main_nav ul .product:hover .products .dropdown2 {
+  display: none;
+  background: #e6e6e6;
+  position: absolute;
+  top: 0;
+  left: 220px;
+}
+header .main_header .main_nav ul .product:hover .products .dropdown2 li {
+  width: 330px;
+}
+header .main_header .main_nav ul .product:hover .products .dropdown2 li:hover {
+  background: #d6d6d6;
+  cursor: pointer;
+}
+header .main_header .main_nav ul .product:hover .products .edudrop:hover .edudrops {
+  display: block;
+}
+header .main_header .main_nav ul .product:hover .products .mobile:hover .mobiles {
+  display: block;
+}
+header .main_header .main_nav ul .product:hover .products .wacom:hover .wacoms {
+  display: block;
+}
 header .main_header .main_nav ul .brush:hover .brushes {
   display: block;
 }
@@ -358,7 +384,7 @@ footer .footer_top {
 footer .footer_top .footer_nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 footer .footer_top .footer_nav .nav_box p {
   margin-bottom: 15px;
@@ -387,6 +413,7 @@ footer .footer_top .social_box i {
   font-size: 1.5em;
   color: #f1f1f1;
   margin-right: 5px;
+  cursor: pointer;
 }
 footer .footer_top .social_box i.ig {
   background: #e4405f;
