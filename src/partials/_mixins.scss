@@ -18,3 +18,10 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+@mixin bgImg($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}

@@ -50,3 +50,7 @@ h4 {
 .bold {
   font-weight: 600;
 }
+
+.btn {
+  @include basicBtn;
+}

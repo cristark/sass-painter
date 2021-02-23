@@ -51,6 +51,13 @@ h4 {
   font-weight: 600;
 }
 
+.btn {
+  font-size: 1.4em;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 /* HEADER */
 header {
   height: 100px;
@@ -204,11 +211,11 @@ main .painting .box_painting {
   align-items: center;
 }
 main .painting .box_painting .box {
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 10px);
   text-align: left;
 }
-main .painting .box_painting .box:not(:last-child) {
-  margin-right: 20px;
+main .painting .box_painting .box:nth-child(2) {
+  margin: 0 20px;
 }
 main .painting .box_painting .box:hover {
   cursor: pointer;
@@ -237,6 +244,73 @@ main .painting .box_painting .box .text p {
 }
 main .painting .box_painting .box .text a {
   color: #009cff;
+}
+main .main_grid {
+  color: #f1f1f1;
+  margin-bottom: 50px;
+}
+main .main_grid .grid_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main_grid .grid_row .box {
+  width: 50%;
+  height: 325px;
+}
+main .main_grid .grid_row .box .btn {
+  background: #f1f1f1;
+  color: #333333;
+  font-size: 1em;
+}
+main .main_grid .grid_row .box .btn:hover {
+  opacity: 0.85;
+}
+main .main_grid .grid_row .box h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+main .main_grid .grid_row .box p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+main .main_grid .grid_row.wacom .txt {
+  background: #3c1567;
+  padding: 60px 50px;
+}
+main .main_grid .grid_row.wacom .images {
+  background-image: url("../img/wacom-painter.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .main_grid .grid_row.wacom .images img {
+  width: 75%;
+}
+main .main_grid .grid_row.painter .txt {
+  background: #3c3c3c;
+  padding: 60px 50px;
+}
+main .main_grid .grid_row.painter .images {
+  background-image: url("../img/painter-master.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+main .main_grid .grid_row.business .txt {
+  background: #0072bc;
+  padding: 60px 50px;
+}
+main .main_grid .grid_row.business .images {
+  background-image: url("../img/business-education.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 footer {
