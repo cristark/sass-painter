@@ -108,12 +108,13 @@ header .main_header .main_nav ul li {
 }
 header .main_header .main_nav ul li:hover {
   background: #f1f1f1;
+  cursor: pointer;
 }
 header .main_header .main_nav ul li:hover a {
   color: #101010;
 }
 header .main_header .main_nav ul li:hover i {
-  color: gray;
+  color: #492f2f;
 }
 header .main_header .main_nav ul li a i {
   color: rgba(211, 211, 211, 0.5);
@@ -121,7 +122,42 @@ header .main_header .main_nav ul li a i {
   margin-left: 5px;
 }
 header .main_header .main_nav ul li .dropdown {
+  display: none;
+  background: #f1f1f1;
   position: absolute;
+  left: 0;
+  z-index: 1;
+}
+header .main_header .main_nav ul li .dropdown li {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .main_header .main_nav ul li .dropdown li:hover {
+  background: #e6e6e6;
+  cursor: pointer;
+}
+header .main_header .main_nav ul li .dropdown li:hover i {
+  color: #101010;
+}
+header .main_header .main_nav ul li .dropdown li a {
+  color: #101010;
+}
+header .main_header .main_nav ul li .dropdown li i {
+  color: rgba(211, 211, 211, 0.5);
+}
+header .main_header .main_nav ul .product:hover .products {
+  display: block;
+}
+header .main_header .main_nav ul .brush:hover .brushes {
+  display: block;
+}
+header .main_header .main_nav ul .support:hover .supports {
+  display: block;
+}
+header .main_header .main_nav ul .learning:hover .learnings {
+  display: block;
 }
 
 /* Jumbotron */

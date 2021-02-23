@@ -47,30 +47,83 @@ header {
       height: 100%;
       line-height: 50px;
 
-      ul li {
-        position: relative;
-        padding: 0 20px;
+      ul {
+        li {
+          position: relative;
+          padding: 0 20px;
 
-        &:hover {
-          background: $mainWhite;
+          &:hover {
+            background: $mainWhite;
+            cursor: pointer;
 
-          a {
-            color: $mainBlack;
+            a {
+              color: $mainBlack;
+            }
+
+            i {
+              color: rgb(73, 47, 47);
+            }
           }
 
-          i {
-            color: gray;
+          a i {
+            color: rgba(211, 211, 211, 0.5);
+            font-size: 0.8em;
+            margin-left: 5px;
+          }
+
+          .dropdown {
+            display: none;
+            background: $mainWhite;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+
+            li {
+              width: 220px;
+              @include flex(space-between);
+
+              &:hover {
+                background: #e6e6e6;
+                cursor: pointer;
+
+                i {
+                  color: $mainBlack;
+                }
+              }
+
+              a {
+                color: $mainBlack;
+              }
+
+              i {
+                color: rgba(211, 211, 211, 0.5);
+              }
+            }
           }
         }
 
-        a i {
-          color: rgba(211, 211, 211, 0.5);
-          font-size: 0.8em;
-          margin-left: 5px;
+        .product:hover {
+          .products {
+            display: block;
+          }
         }
 
-        .dropdown {
-          position: absolute;
+        .brush:hover {
+          .brushes {
+            display: block;
+          }
+        }
+
+        .support:hover {
+          .supports {
+            display: block;
+          }
+        }
+
+        .learning:hover {
+          .learnings {
+            display: block;
+          }
         }
       }
     }
