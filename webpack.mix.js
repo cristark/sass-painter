@@ -6,5 +6,6 @@ mix
     .js('src/script.js', 'js')
     .sass('src/style.scss', 'css')
     .options({
-    processCssUrls: false
-});;
+        processCssUrls: false
+    })
+    .vue();
