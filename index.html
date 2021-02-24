@@ -47,18 +47,20 @@
                                 <a href="#">Products<i class="fas fa-chevron-down"></i></a>
                                 <!-- Dropdown Menu - Products -->
                                 <ul class="products dropdown">
-                                    <li>
+                                    <li class="drop_product">
                                         <a href="#">Digital Painting</a>
                                         <i class="fas fa-caret-right"></i>
+                                        <!-- Dropdown Menu - Products -->
+                                        <ul class="drop_products dropdown2">
+                                            <li v-for="element in digPaintDrop"><a href="#">{{element}}</a></li>
+                                        </ul>
                                     </li>
                                     <li class="edudrop">
                                         <a href="#">Licensing & Education</a>
                                         <i class="fas fa-caret-right"></i>
                                         <!-- Dropdown Menu - Education -->
                                         <ul class="edudrops dropdown2">
-                                            <li><a href="#">Painter 2021 - Corporate License</a></li>
-                                            <li><a href="#">Painter 2021 - Education License</a></li>
-                                            <li><a href="#">Painter 2021 - Education Edition</a></li>
+                                            <li v-for="element in eduDrop"><a href="#">{{element}}</a></li>
                                         </ul>
                                     </li>
                                     <li class="mobile">
@@ -66,9 +68,7 @@
                                         <i class="fas fa-caret-right"></i>
                                         <!-- Dropdown Menu - Mobile Apps -->
                                         <ul class="mobiles dropdown2">
-                                            <li><a href="#">Painter Mobile (Android)</a></li>
-                                            <li><a href="#">Paint it! Now (iPhone)</a></li>
-                                            <li><a href="#">Paint it! Show (iPad)</a></li>
+                                            <li v-for="element in mobileDrop"><a href="#">{{element}}</a></li>
                                         </ul>
                                     </li>
                                     <li class="wacom">
@@ -76,15 +76,7 @@
                                         <i class="fas fa-caret-right"></i>
                                         <!-- Dropdown Menu - Wacom -->
                                         <ul class="wacoms dropdown2">
-                                            <li><a href="#">Wacom/Painter Offers</a></li>
-                                            <li><a href="#">Cintiq Pro 16 + Painter 2021</a></li>
-                                            <li><a href="#">Cintiq 22HD + Painter 2021</a></li>
-                                            <li><a href="#">Intuos Pro Medium + Painter 2021</a></li>
-                                            <li><a href="#">Intuos Pro Large + Painter 2021</a></li>
-                                            <li><a href="#">Cintiq 16 Creative Pen Display + Painter 2021</a></li>
-                                            <li><a href="#">One Creative Pen Display + Painter 2021</a></li>
-                                            <li><a href="#">Bamboo Duo Stylus</a></li>
-                                            <li><a href="#">Wacom Pro Pen 2 with Case</a></li>
+                                            <li v-for="element in wacomDrop"><a href="#">{{element}}</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -93,9 +85,7 @@
                                 <a href="#">Brushes<i class="fas fa-chevron-down"></i></a>
                                 <!-- Dropdown Menu - Brushes -->
                                 <ul class="brushes dropdown">
-                                    <li><a href="#">Painter</a></li>
-                                    <li><a href="#">ParticleShop</a></li>
-                                    <li><a href="#">Painter Essentials</a></li>
+                                    <li v-for="element in brushesDrop"><a href="#">{{element}}</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Wacom Tablets</a></li>
@@ -106,19 +96,14 @@
                                 <a href="#">Support<i class="fas fa-chevron-down"></i></a>
                                 <!-- Dropdown Menu - Support -->
                                 <ul class="supports dropdown">
-                                    <li><a href="#">Patches & Updates</a></li>
-                                    <li><a href="#">Knowledgebase</a></li>
-                                    <li><a href="#">View all</a></li>
+                                    <li v-for="element in supportDrop"><a href="#">{{element}}</a></li>
                                 </ul>
                             </li>
                             <li class="learning">
                                 <a href="#">Learning<i class="fas fa-chevron-down"></i></a>
                                 <!-- Dropdown Menu - Learning -->
                                 <ul class="learnings dropdown">
-                                    <li><a href="#">Tutorials</a></li>
-                                    <li><a href="#">Tips & Tricks</a></li>
-                                    <li><a href="#">Artist Interviews</a></li>
-                                    <li><a href="#">Webinar Library</a></li>
+                                    <li v-for="element in learningDrop"><a href="#">{{element}}</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -252,12 +237,7 @@
                         </div>
                     </div>
                     <div class="social_box">
-                        <i class="fab fa-instagram ig"></i>
-                        <i class="fab fa-facebook-f fb"></i>
-                        <i class="fab fa-youtube yt"></i>
-                        <i class="fab fa-twitter tw"></i>
-                        <i class="fab fa-pinterest-p pi"></i>
-                        <i class="fas fa-rss rss"></i>
+                        <i v-for="icon in socialBox" :class="icon"></i>
                     </div>
                 </div>
             </div>

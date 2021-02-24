@@ -127,6 +127,12 @@ header {
               }
             }
 
+            .drop_product:hover {
+              .drop_products {
+                display: block;
+              }
+            }
+
             .edudrop:hover {
               .edudrops {
                 display: block;

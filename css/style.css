@@ -167,6 +167,9 @@ header .main_header .main_nav ul .product:hover .products .dropdown2 li:hover {
   background: #d6d6d6;
   cursor: pointer;
 }
+header .main_header .main_nav ul .product:hover .products .drop_product:hover .drop_products {
+  display: block;
+}
 header .main_header .main_nav ul .product:hover .products .edudrop:hover .edudrops {
   display: block;
 }
